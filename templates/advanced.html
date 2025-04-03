@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pygle Advanced Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="top-links">
+        <a href="{{ url_for('index') }}">Google Search</a>
+    </div>
+
+    <div class="advanced-container">
+        <form action="https://www.google.com/search" method="get">
+            <label>All these words: <input type="text" name="as_q"></label>
+            <label>This exact word or phrase: <input type="text" name="as_epq"></label>
+            <label>Any of these words: <input type="text" name="as_oq"></label>
+            <label>None of these words: <input type="text" name="as_eq"></label>
+            <div class="buttons">
+                <input type="submit" value="Advanced Search" class="advanced-btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

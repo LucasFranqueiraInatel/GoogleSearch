@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pygle Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="top-links">
+        <a href="{{ url_for('images') }}">Image Search</a>
+        <a href="{{ url_for('advanced') }}">Advanced Search</a>
+    </div>
+
+    <div class="center-container">
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q" class="search-bar" placeholder="Search Pygle...">
+            <div class="buttons">
+                <input type="submit" value="Google Search">
+                <input type="submit" name="btnI" value="I'm Feeling Lucky">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
