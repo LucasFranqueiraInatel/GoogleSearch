@@ -4,6 +4,36 @@ body {
     margin-top: 100px;
 }
 
+
+.advanced-container {
+    width: 600px;
+    margin: 60px auto;
+    padding: 30px 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+
+
+.advanced-container label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+.advanced-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 .top-links {
     position: absolute;
     top: 20px;
@@ -50,25 +80,9 @@ body {
     margin: 0 5px;
     border-radius: 5px;
     border: none;
-    background-color: #f8f9fa;
+    background-color: #357ae8;
+    color: white;
     cursor: pointer;
     font-weight: bold;
 }
 
-.advanced-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 400px;
-    margin: 0 auto;
-}
-
-.advanced-container label {
-    margin: 10px 0;
-    width: 100%;
-}
-
-.advanced-btn {
-    background-color: #4d90fe;
-    color: white;
-}
